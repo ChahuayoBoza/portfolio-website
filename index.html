@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhonatan Chahuayo Boza | Senior Full-Stack Engineer & Cloud Architecture Specialist</title>
+    <meta name="description" content="Portafolio profesional de Jhonatan Moisés Chahuayo Boza. Ingeniero de Sistemas Colegiado, especialista en Microservicios, Sistemas Financieros (BCP, BBVA, BCI, Prima AFP), Voto Digital ONPE y Arquitectura Cloud AWS/Azure.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Animated Particles / Gradients -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid-pattern"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-container">
+        <nav class="navbar">
+            <a href="#hero" class="brand-logo">
+                <span class="logo-code">&lt;</span>JMC<span class="logo-code">/&gt;</span>
+                <span class="brand-name">Chahuayo<span class="dot">.dev</span></span>
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Inicio</a></li>
+                <li><a href="#clients" class="nav-link">Experiencia Enterprise</a></li>
+                <li><a href="#simulators" class="nav-link">Demos Interactivas</a></li>
+                <li><a href="#case-studies" class="nav-link">Casos de Estudio</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades & Cloud</a></li>
+                <li><a href="#experience" class="nav-link">Trayectoria</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline btn-sm">
+                    <i data-lucide="mail"></i> Contactar
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    <span>Disponible para Proyectos & Liderazgo Técnico</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Ingeniero de Sistemas & <br>
+                    <span class="gradient-text">Arquitecto Cloud Solutions</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Especialista en <strong>Microservicios</strong>, <strong>Sistemas Financieros</strong> (BCP, BBVA, BCI, Prima AFP) y <strong>Proyectos Nacionales de Alta Concurrencia</strong> (Voto Digital ONPE). Formación especializada en <strong>Arquitectura Cloud AWS & Azure</strong>.
+                </p>
+
+                <div class="hero-tags">
+                    <span class="hero-tag"><i data-lucide="shield-check"></i> Ingeniero Colegiado CIP</span>
+                    <span class="hero-tag"><i data-lucide="award"></i> Arquitectura Cloud AWS</span>
+                    <span class="hero-tag"><i data-lucide="cpu"></i> Spring Boot & Node.js</span>
+                    <span class="hero-tag"><i data-lucide="layers"></i> Angular & React</span>
+                </div>
+
+                <div class="hero-cta-group">
+                    <a href="#simulators" class="btn btn-primary btn-lg">
+                        <i data-lucide="play-circle"></i> Probador de Demos en Vivo
+                    </a>
+                    <a href="#case-studies" class="btn btn-secondary btn-lg">
+                        <i data-lucide="briefcase"></i> Ver Casos Enterprise
+                    </a>
+                    <a href="javascript:void(0)" onclick="openCvModal()" class="btn btn-outline btn-lg">
+                        <i data-lucide="file-text"></i> Hoja de Vida / CV
+                    </a>
+                </div>
+
+                <!-- Stats Counters -->
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="7">7+</div>
+                        <div class="stat-label">Años de Trayectoria Full-Stack</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-card">
+                        <div class="stat-number">BCP / BBVA</div>
+                        <div class="stat-label">Banca & Pasarelas Fintech</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-card">
+                        <div class="stat-number">ONPE</div>
+                        <div class="stat-label">Sistema Voto Digital Nacional</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-card">
+                        <div class="stat-number">Cloud AWS</div>
+                        <div class="stat-label">Arquitectura Cloud & Azure</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUST BAR / CLIENTES ENTERPRISE -->
+        <section id="clients" class="clients-section">
+            <div class="section-container">
+                <p class="clients-title">Sistemas e infraestructuras desarrolladas para clientes de primer nivel</p>
+                
+                <div class="clients-grid">
+                    <div class="client-card">
+                        <div class="client-icon"><i data-lucide="landmark"></i></div>
+                        <div class="client-info">
+                            <span class="client-name">Banco de Crédito BCP</span>
+                            <span class="client-desc">Canales Digitales Credicorp</span>
+                        </div>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="client-icon"><i data-lucide="building-2"></i></div>
+                        <div class="client-info">
+                            <span class="client-name">BBVA International</span>
+                            <span class="client-desc">Arquitectura CELLS & Web Components</span>
+                        </div>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="client-icon"><i data-lucide="vote"></i></div>
+                        <div class="client-info">
+                            <span class="client-name">ONPE</span>
+                            <span class="client-desc">Proyecto Crítico Voto Digital</span>
+                        </div>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="client-icon"><i data-lucide="credit-card"></i></div>
+                        <div class="client-info">
+                            <span class="client-name">IZIPAY / Plus One</span>
+                            <span class="client-desc">Pasarela de Pagos Transaccional</span>
+                        </div>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="client-icon"><i data-lucide="shield"></i></div>
+                        <div class="client-info">
+                            <span class="client-name">BCI Chile</span>
+                            <span class="client-desc">Integraciones Bancarias Latam</span>
+                        </div>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="client-icon"><i data-lucide="piggy-bank"></i></div>
+                        <div class="client-info">
+                            <span class="client-name">Prima AFP</span>
+                            <span class="client-desc">Sistemas Previsionales y Cobros</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEMOS INTERACTIVAS EN VIVO -->
+        <section id="simulators" class="simulators-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-tag"><i data-lucide="terminal"></i> Interactive Lab</div>
+                    <h2 class="section-title">Demos Interactivas de Arquitectura & Código</h2>
+                    <p class="section-subtitle">Experimenta en tiempo real cómo funcionan los módulos transaccionales, simulación de alta concurrencia y flujos BPM que diseño e implemento.</p>
+                </div>
+
+                <!-- Tabs header -->
+                <div class="sim-tabs">
+                    <button class="sim-tab active" data-tab="tab-fintech">
+                        <i data-lucide="credit-card"></i> Simulador Pasarela Payments
+                    </button>
+                    <button class="sim-tab" data-tab="tab-concurrency">
+                        <i data-lucide="activity"></i> Carga Voto Digital (ONPE)
+                    </button>
+                    <button class="sim-tab" data-tab="tab-bpm">
+                        <i data-lucide="git-merge"></i> Motor BPM & Microservicios
+                    </button>
+                </div>
+
+                <!-- TAB 1: FINTECH PAYMENTS SIMULATOR -->
+                <div class="sim-content active" id="tab-fintech">
+                    <div class="sim-grid">
+                        <div class="sim-panel sim-controls">
+                            <h3><i data-lucide="sliders"></i> Parámetros de Transacción (IZIPAY / BCP API)</h3>
+                            <form id="paymentForm" onsubmit="runPaymentSimulation(event)">
+                                <div class="form-group">
+                                    <label>Monto a Procesar (PEN / USD)</label>
+                                    <div class="input-prefix">
+                                        <span>S/.</span>
+                                        <input type="number" id="payAmount" value="250.00" step="10" min="10" max="10000" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Marca de Tarjeta</label>
+                                    <select id="cardBrand">
+                                        <option value="Visa Credicorp">Visa BCP / Credicorp</option>
+                                        <option value="Mastercard BBVA">Mastercard BBVA</option>
+                                        <option value="AMEX IZIPAY">American Express IZIPAY</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Tipo de Operación</label>
+                                    <select id="opType">
+                                        <option value="PAYMENT_TOKENIZATION">Cobro Directo + Tokenización AES-256</option>
+                                        <option value="RECURRING_SUBSCRIPTION">Débito Automático Previsional (Prima AFP)</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block" id="btnProcessPayment">
+                                    <i data-lucide="send"></i> Simular Petición API Backend
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="sim-panel sim-output">
+                            <div class="code-header">
+                                <span class="code-title"><i data-lucide="code-2"></i> Payload JSON & Gateway Status</span>
+                                <span class="code-badge" id="payStatusBadge">READY</span>
+                            </div>
+                            <pre class="code-block"><code id="paymentJsonCode">{
+  "gateway": "IZIPAY_BCP_GATEWAY_V2",
+  "status": "Awaiting execution...",
+  "security": "SSL / TLS 1.3 - Encrypted Payload"
+}</code></pre>
+                            <div class="sim-logs" id="paymentLogs">
+                                <div class="log-item info">[SYS] Listo para enviar payload al microservicio Spring Boot / .NET Core...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: HIGH CONCURRENCY VOTING SIMULATOR -->
+                <div class="sim-content" id="tab-concurrency">
+                    <div class="sim-grid">
+                        <div class="sim-panel sim-controls">
+                            <h3><i data-lucide="zap"></i> Carga Voto Digital (ONPE Simulation)</h3>
+                            <p class="sim-panel-desc">Ajusta la cantidad de electores concurrentes accediendo al microservicio de votación en tiempo real.</p>
+                            
+                            <div class="form-group">
+                                <label>Votantes Concurrentes Simultáneos: <strong id="voterCountVal" class="gradient-text">50,000 req/min</strong></label>
+                                <input type="range" id="voterSlider" min="10000" max="250000" step="10000" value="50000" oninput="updateConcurrency(this.value)">
+                            </div>
+
+                            <div class="metric-readouts">
+                                <div class="readout-box">
+                                    <span class="readout-title">Spring Boot Pods</span>
+                                    <span class="readout-value" id="podsVal">4 Replicas</span>
+                                </div>
+                                <div class="readout-box">
+                                    <span class="readout-title">PostgreSQL Latency</span>
+                                    <span class="readout-value" id="dbLatencyVal">12 ms</span>
+                                </div>
+                                <div class="readout-box">
+                                    <span class="readout-title">Throughput</span>
+                                    <span class="readout-value" id="tpsVal">1,250 req/s</span>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-secondary btn-block" onclick="triggerTrafficSpike()">
+                                <i data-lucide="trending-up"></i> Simular Pico de Carga Máxima (Hora Pico)
+                            </button>
+                        </div>
+
+                        <div class="sim-panel sim-output">
+                            <div class="code-header">
+                                <span class="code-title"><i data-lucide="activity"></i> Monitor de Métricas Docker & Microservicios</span>
+                                <span class="code-badge badge-green" id="concurrencyHealth">HEALTHY (99.99%)</span>
+                            </div>
+                            
+                            <div class="chart-container">
+                                <canvas id="concurrencyCanvas" width="500" height="180"></canvas>
+                            </div>
+
+                            <div class="sim-logs" id="concurrencyLogs">
+                                <div class="log-item success">[ONPE-POD-1] Microservicio registrando papeleta digital en PostgreSQL...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: BPM WORKFLOW VISUALIZER -->
+                <div class="sim-content" id="tab-bpm">
+                    <div class="sim-panel full-width">
+                        <div class="bpm-header">
+                            <div>
+                                <h3><i data-lucide="git-merge"></i> Motor de Flujos de Negocio (Activiti BPM - OECE)</h3>
+                                <p class="sim-panel-desc">Simula el paso a paso de una solicitud pasando por reglas de negocio automatizadas y microservicios.</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="stepBpmWorkflow()">
+                                <i data-lucide="play"></i> Avanzar Siguiente Etapa del Flujo
+                            </button>
+                        </div>
+
+                        <div class="bpm-nodes">
+                            <div class="bpm-node active" id="node1">
+                                <div class="bpm-icon"><i data-lucide="file-plus"></i></div>
+                                <h4>1. Recepción Solicitud</h4>
+                                <p>Frontend Angular SPA</p>
+                                <span class="node-status">COMPLETADO</span>
+                            </div>
+                            <div class="bpm-arrow"><i data-lucide="arrow-right"></i></div>
+
+                            <div class="bpm-node" id="node2">
+                                <div class="bpm-icon"><i data-lucide="shield-alert"></i></div>
+                                <h4>2. Validación Seguridad</h4>
+                                <p>Spring Boot / JWT Security</p>
+                                <span class="node-status">ESPERANDO</span>
+                            </div>
+                            <div class="bpm-arrow"><i data-lucide="arrow-right"></i></div>
+
+                            <div class="bpm-node" id="node3">
+                                <div class="bpm-icon"><i data-lucide="cpu"></i></div>
+                                <h4>3. Reglas Activiti BPM</h4>
+                                <p>Motor de Procesos BPMN 2.0</p>
+                                <span class="node-status">ESPERANDO</span>
+                            </div>
+                            <div class="bpm-arrow"><i data-lucide="arrow-right"></i></div>
+
+                            <div class="bpm-node" id="node4">
+                                <div class="bpm-icon"><i data-lucide="database"></i></div>
+                                <h4>4. Persistencia PostgreSQL</h4>
+                                <p>Docker Contenedorizado</p>
+                                <span class="node-status">ESPERANDO</span>
+                            </div>
+                        </div>
+
+                        <div class="bpm-log-console" id="bpmConsole">
+                            <div class="console-line">[BPM ENGINE]: Proceso #PROC-9921 listo en nodo 1 (Frontend Angular enviado).</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CASOS DE ESTUDIO ENTERPRISE -->
+        <section id="case-studies" class="case-studies-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-tag"><i data-lucide="award"></i> Enterprise Impact</div>
+                    <h2 class="section-title">Casos de Estudio & Proyectos Clave</h2>
+                    <p class="section-subtitle">Desarrollos de alto impacto construidos para corporaciones financieras y entidades gubernamentales.</p>
+                </div>
+
+                <div class="cases-grid">
+                    <!-- Case 1: ONPE -->
+                    <div class="case-card">
+                        <div class="case-header">
+                            <span class="case-category">Gobierno / Tecnología Electoral</span>
+                            <span class="case-period">2025</span>
+                        </div>
+                        <h3 class="case-title">Sistema de Voto Digital Nacional (ONPE)</h3>
+                        <p class="case-desc">
+                            Diseño e implementación de microservicios altamente concurrentes y seguros para la Gerencia de Informática y Tecnología Electoral. Garantizó cero caídas durante simulacros y procesos de alta demanda.
+                        </p>
+                        <div class="case-highlights">
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Alta concurrencia tolerante a fallos</div>
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Microservicios en Java Spring Boot</div>
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Frontend accesible e interactivo en React + Redux</div>
+                        </div>
+                        <div class="case-tech-tags">
+                            <span>Java Spring Boot</span>
+                            <span>React</span>
+                            <span>Redux</span>
+                            <span>PostgreSQL</span>
+                            <span>Microservices</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 2: NTT DATA / BCP & Prima AFP -->
+                    <div class="case-card">
+                        <div class="case-header">
+                            <span class="case-category">Banca & Finanzas (Credicorp)</span>
+                            <span class="case-period">2022 – 2025</span>
+                        </div>
+                        <h3 class="case-title">Módulos Transaccionales BCP & Prima AFP</h3>
+                        <p class="case-desc">
+                            Liderazgo técnico en la construcción de servicios críticos para los canales digitales del Banco de Crédito del Perú (BCP) y optimización de plataformas de cálculo previsional para Prima AFP.
+                        </p>
+                        <div class="case-highlights">
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Arquitectura híbrida Spring Boot + Node.js</div>
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Interfaces dinámicas en Angular & React</div>
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Gestión relacional y NoSQL (SQL Server & MongoDB)</div>
+                        </div>
+                        <div class="case-tech-tags">
+                            <span>Angular</span>
+                            <span>React</span>
+                            <span>Spring Boot</span>
+                            <span>Node.js</span>
+                            <span>SQL Server</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 3: NEORIS / BBVA & BCI -->
+                    <div class="case-card">
+                        <div class="case-header">
+                            <span class="case-category">Banca Internacional</span>
+                            <span class="case-period">2021</span>
+                        </div>
+                        <h3 class="case-title">Componentes CELLS BBVA & Integraciones BCI Chile</h3>
+                        <p class="case-desc">
+                            Desarrollo de módulos bajo la arquitectura corporativa CELLS del BBVA basada en Web Components modulares (LitElement). En BCI Chile, integración de APIs financieras robustas en Backend.
+                        </p>
+                        <div class="case-highlights">
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Arquitectura CELLS (BBVA Standard)</div>
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Web Components modulares reutilizables</div>
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Integraciones Backend con Node.js & PostgreSQL</div>
+                        </div>
+                        <div class="case-tech-tags">
+                            <span>CELLS BBVA</span>
+                            <span>Web Components</span>
+                            <span>Node.js</span>
+                            <span>Spring Boot</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 4: Plus One / IZIPAY -->
+                    <div class="case-card">
+                        <div class="case-header">
+                            <span class="case-category">Pasarelas de Pago & Fintech</span>
+                            <span class="case-period">2020 – 2021</span>
+                        </div>
+                        <h3 class="case-title">Pasarela de Pagos Transaccional IZIPAY</h3>
+                        <p class="case-desc">
+                            Implementación de la lógica transaccional, flujos de cobro en línea y panel administrativo dinámico para la integración de comercios con la pasarela de pagos IZIPAY.
+                        </p>
+                        <div class="case-highlights">
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Backend seguro en .NET Core & Node.js</div>
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Dashboard administrativo SPA en Angular</div>
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Integración con APIs de cobro y encriptación</div>
+                        </div>
+                        <div class="case-tech-tags">
+                            <span>Angular</span>
+                            <span>.NET Core</span>
+                            <span>Node.js</span>
+                            <span>SQL Server</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+
+                    <!-- Case 5: OECE -->
+                    <div class="case-card">
+                        <div class="case-header">
+                            <span class="case-category">Automatización Enterprise</span>
+                            <span class="case-period">2026</span>
+                        </div>
+                        <h3 class="case-title">Automatización de Procesos con Activiti BPM (OECE)</h3>
+                        <p class="case-desc">
+                            Orquestación de flujos de trabajo automatizados combinando el motor Activiti BPM con microservicios en Spring Boot e interfaces SPA modulares en Angular.
+                        </p>
+                        <div class="case-highlights">
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Motor de procesos de negocio BPMN</div>
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Contenedorización total con Docker</div>
+                            <div class="highlight-item"><i data-lucide="check-circle-2"></i> Persistencia PostgreSQL de alto rendimiento</div>
+                        </div>
+                        <div class="case-tech-tags">
+                            <span>Java Spring Boot</span>
+                            <span>Angular</span>
+                            <span>Activiti BPM</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES & CLOUD CERTIFICATIONS -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-tag"><i data-lucide="cpu"></i> Stack & Architectural Skillset</div>
+                    <h2 class="section-title">Habilidades Técnicas & Certificaciones</h2>
+                    <p class="section-subtitle">Tecnologías dominadas para el desarrollo integral de software, desde la interfaz de usuario hasta la infraestructura Cloud.</p>
+                </div>
+
+                <!-- Skill Filters -->
+                <div class="skill-filters">
+                    <button class="skill-filter-btn active" data-filter="all">Todos</button>
+                    <button class="skill-filter-btn" data-filter="backend">Backend & Microservicios</button>
+                    <button class="skill-filter-btn" data-filter="frontend">Frontend & UI</button>
+                    <button class="skill-filter-btn" data-filter="cloud">Cloud & DevOps</button>
+                    <button class="skill-filter-btn" data-filter="database">Bases de Datos</button>
+                </div>
+
+                <!-- Featured Certifications / Courses Banner -->
+                <div class="cert-featured-banner">
+                    <div class="cert-badge-large">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-tag">CURSO & FORMACIÓN ESPECIALIZADA</span>
+                        <h3>Curso de Arquitectura en la Nube (AWS)</h3>
+                        <p>Diseño e implementación de arquitecturas distribuidas, escalables y tolerantes a fallos en la nube de Amazon Web Services (EC2, S3, RDS, ECS, Lambda, CloudFront, IAM).</p>
+                    </div>
+                    <div class="cert-extra">
+                        <span class="cert-status"><i data-lucide="check"></i> Curso Completado</span>
+                        <span class="cert-year">AWS Cloud Architecture</span>
+                    </div>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Backend -->
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-header">
+                            <span class="skill-icon"><i data-lucide="coffee"></i></span>
+                            <span class="skill-name">Java Spring Boot</span>
+                        </div>
+                        <p class="skill-desc">Microservicios, Spring Security, JPA/Hibernate, REST APIs.</p>
+                        <div class="skill-level"><span style="width: 95%;"></span></div>
+                    </div>
+
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-header">
+                            <span class="skill-icon"><i data-lucide="server"></i></span>
+                            <span class="skill-name">Node.js (NestJS / Express)</span>
+                        </div>
+                        <p class="skill-desc">APIs asíncronas, TypeScript, arquitectura limpia, eventos.</p>
+                        <div class="skill-level"><span style="width: 90%;"></span></div>
+                    </div>
+
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-header">
+                            <span class="skill-icon"><i data-lucide="code"></i></span>
+                            <span class="skill-name">.NET Core</span>
+                        </div>
+                        <p class="skill-desc">Lógica transaccional, Entity Framework, C# APIs para pasarelas.</p>
+                        <div class="skill-level"><span style="width: 85%;"></span></div>
+                    </div>
+
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-header">
+                            <span class="skill-icon"><i data-lucide="git-branch"></i></span>
+                            <span class="skill-name">Activiti BPM</span>
+                        </div>
+                        <p class="skill-desc">Automatización de flujos de negocio BPMN 2.0 en OECE.</p>
+                        <div class="skill-level"><span style="width: 88%;"></span></div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-header">
+                            <span class="skill-icon"><i data-lucide="layout"></i></span>
+                            <span class="skill-name">Angular (Avanzado)</span>
+                        </div>
+                        <p class="skill-desc">Arquitectura modular, RxJS, NgRx, optimización SPA.</p>
+                        <div class="skill-level"><span style="width: 95%;"></span></div>
+                    </div>
+
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-header">
+                            <span class="skill-icon"><i data-lucide="atom"></i></span>
+                            <span class="skill-name">React & Redux</span>
+                        </div>
+                        <p class="skill-desc">Hooks, Redux Toolkit, componentes accesibles (Voto Digital ONPE).</p>
+                        <div class="skill-level"><span style="width: 90%;"></span></div>
+                    </div>
+
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-header">
+                            <span class="skill-icon"><i data-lucide="box"></i></span>
+                            <span class="skill-name">CELLS BBVA & Web Components</span>
+                        </div>
+                        <p class="skill-desc">Estándar bancario LitElement para BBVA International.</p>
+                        <div class="skill-level"><span style="width: 88%;"></span></div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-card" data-category="cloud">
+                        <div class="skill-header">
+                            <span class="skill-icon"><i data-lucide="cloud"></i></span>
+                            <span class="skill-name">AWS Cloud Architecture</span>
+                        </div>
+                        <p class="skill-desc">Solutions Architect: VPC, EC2, ECS, Lambda, S3, RDS, IAM.</p>
+                        <div class="skill-level"><span style="width: 92%;"></span></div>
+                    </div>
+
+                    <div class="skill-card" data-category="cloud">
+                        <div class="skill-header">
+                            <span class="skill-icon"><i data-lucide="container"></i></span>
+                            <span class="skill-name">Docker & Contenedores</span>
+                        </div>
+                        <p class="skill-desc">Dockerfile, Docker Compose, despliegues de microservicios.</p>
+                        <div class="skill-level"><span style="width: 90%;"></span></div>
+                    </div>
+
+                    <div class="skill-card" data-category="cloud">
+                        <div class="skill-header">
+                            <span class="skill-icon"><i data-lucide="layers"></i></span>
+                            <span class="skill-name">Azure Architect Series</span>
+                        </div>
+                        <p class="skill-desc">Fundamentos y administración Azure (AZ-900 / 104 / 305).</p>
+                        <div class="skill-level"><span style="width: 85%;"></span></div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-card" data-category="database">
+                        <div class="skill-header">
+                            <span class="skill-icon"><i data-lucide="database"></i></span>
+                            <span class="skill-name">PostgreSQL</span>
+                        </div>
+                        <p class="skill-desc">Bases de datos relacionales, optimización de queries, ONPE & OECE.</p>
+                        <div class="skill-level"><span style="width: 92%;"></span></div>
+                    </div>
+
+                    <div class="skill-card" data-category="database">
+                        <div class="skill-header">
+                            <span class="skill-icon"><i data-lucide="hard-drive"></i></span>
+                            <span class="skill-name">SQL Server & MongoDB</span>
+                        </div>
+                        <p class="skill-desc">Relacional enterprise para BCP / IZIPAY y documentos NoSQL.</p>
+                        <div class="skill-level"><span style="width: 88%;"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAYECTORIA PROFESIONAL / TIMELINE -->
+        <section id="experience" class="timeline-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-tag"><i data-lucide="git-commit"></i> Career Path</div>
+                    <h2 class="section-title">Trayectoria Profesional</h2>
+                    <p class="section-subtitle">Evolución laboral liderando desarrollos para banca, estado y fintech.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- OECE 2026 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">FEB 2026 – AGO 2026</div>
+                            <h3 class="timeline-role">Desarrollador FullStack | OECE</h3>
+                            <p class="timeline-desc">
+                                Optimización y automatización de procesos internos. Implementación de microservicios en Java Spring Boot, automatización de flujos con motor Activiti BPM e interfaces SPA dinámicas en Angular contenedorizadas en Docker con PostgreSQL.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Java Spring Boot</span> <span>Angular</span> <span>Activiti BPM</span> <span>PostgreSQL</span> <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ONPE 2025 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">JUN 2025 – DIC 2025</div>
+                            <h3 class="timeline-role">Desarrollador FullStack | ONPE</h3>
+                            <p class="timeline-desc">
+                                Proyecto crítico "Voto Digital" para la Gerencia de Informática y Tecnología Electoral. Diseño de microservicios en Java Spring Boot con alta concurrencia y persistencia PostgreSQL. Frontend interactivo accesible con React y Redux.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Java Spring Boot</span> <span>React</span> <span>Redux</span> <span>PostgreSQL</span> <span>Microservicios</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NTT DATA (BCP / Prima AFP) 2022-2025 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">ABR 2022 – MAY 2025</div>
+                            <h3 class="timeline-role">Desarrollador FullStack | NTT DATA (BCP & Prima AFP)</h3>
+                            <p class="timeline-desc">
+                                Desarrollo de módulos transaccionales en los canales digitales del Banco de Crédito del Perú (BCP) y optimización de sistemas previsionales para Prima AFP. Microservicios con Spring Boot y Node.js; UIs con Angular y React.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Angular</span> <span>React</span> <span>Spring Boot</span> <span>Node.js</span> <span>SQL Server</span> <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEORIS (BBVA / BCI) 2021 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">MAR 2021 – DIC 2021</div>
+                            <h3 class="timeline-role">Desarrollador FullStack | Neoris (BBVA & BCI Chile)</h3>
+                            <p class="timeline-desc">
+                                Sistemas financieros para banca internacional. En BBVA, arquitectura corporativa CELLS (Web Components / LitElement). Para BCI Chile, integraciones Backend en Node.js y Spring Boot con PostgreSQL.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>CELLS BBVA</span> <span>Web Components</span> <span>Node.js</span> <span>Spring Boot</span> <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PLUS ONE LATAM (IZIPAY) 2020-2021 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">ENE 2020 – ENE 2021</div>
+                            <h3 class="timeline-role">Desarrollador FullStack | Plus One Latam (IZIPAY)</h3>
+                            <p class="timeline-desc">
+                                Módulos web transaccionales para la pasarela de pagos IZIPAY. Lógica de cobros con .NET Core y Node.js conectada a SQL Server y MongoDB. Panel administrativo SPA con Angular.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Angular</span> <span>.NET Core</span> <span>Node.js</span> <span>SQL Server</span> <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSJ JUNIN 2019 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">ABR 2019 – DIC 2019</div>
+                            <h3 class="timeline-role">Desarrollador Web y Soporte | Corte Superior de Justicia Junín</h3>
+                            <p class="timeline-desc">
+                                Desarrollo de portales web institucionales, diseño de bases de datos relacionales y soporte operativo en redes e instalación de herramientas.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>PHP</span> <span>JavaScript</span> <span>SQL Server</span> <span>Soporte Redes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="contact-card-wrapper">
+                    <div class="contact-info-panel">
+                        <span class="contact-tag"><i data-lucide="message-square"></i> Conversemos</span>
+                        <h2>¿Tienes un proyecto o desafío técnico en mente?</h2>
+                        <p>Estoy disponible para posiciones Senior, liderazgo en arquitectura Full-Stack, proyectos de transformación digital y consultorías de nube.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="icon-box"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <span class="item-label">Correo Electrónico</span>
+                                    <a href="mailto:chahuayoboza@gmail.com" class="item-value">chahuayoboza@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-box"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <span class="item-label">Teléfono / WhatsApp</span>
+                                    <a href="https://wa.me/51964790673" target="_blank" class="item-value">+51 964 790 673</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-box"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <span class="item-label">Ubicación</span>
+                                    <span class="item-value">Junín / Lima, Perú (Disponible Remote / Híbrido)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/JMCHB" target="_blank" class="social-btn" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://jmchb.netlify.app" target="_blank" class="social-btn" aria-label="Sitio Web">
+                                <i data-lucide="globe"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel">
+                        <h3>Enviarme un Mensaje Directo</h3>
+                        <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                            <div class="form-group">
+                                <label for="contactName">Tu Nombre o Nombre de la Empresa</label>
+                                <input type="text" id="contactName" placeholder="Ej. Carlos Mendoza (Tech Lead)" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Tu Correo de Contacto</label>
+                                <input type="email" id="contactEmail" placeholder="nombre@empresa.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Asunto</label>
+                                <select id="contactSubject">
+                                    <option value="Propuesta Laboral Senior">Propuesta Laboral / Contratación Senior</option>
+                                    <option value="Consultoria Arquitectura Cloud / Microservicios">Consultoría Arquitectura Cloud / Microservicios</option>
+                                    <option value="Desarrollo Proyecto Full-Stack">Desarrollo de Proyecto Web / Mobile</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Mensaje o Detalles del Proyecto</label>
+                                <textarea id="contactMessage" rows="4" placeholder="Cuéntame sobre el reto técnico o vacante..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i data-lucide="send"></i> Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="section-container footer-content">
+            <p>&copy; 2026 Jhonatan Moisés Chahuayo Boza. Todos los derechos reservados. | Diseñado para Netlify & GitHub.</p>
+            <div class="footer-meta">
+                <span>Ingeniero de Sistemas Colegiado</span> • <span>Arquitectura Cloud AWS & Azure</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL PARA VER / DESCARGAR CV -->
+    <div class="modal-backdrop" id="cvModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3><i data-lucide="file-text"></i> Curriculum Vitae - Jhonatan Chahuayo Boza</h3>
+                <button class="modal-close" onclick="closeCvModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>JHONATAN MOISÉS CHAHUAYO BOZA</strong> - Ingeniero de Sistemas Colegiado & Desarrollador Full-Stack</p>
+                <div class="cv-summary-box">
+                    <p><strong>Perfil:</strong> Especialista en microservicios (Java Spring Boot, Node.js), sistemas bancarios/fintech (BCP, BBVA, BCI, Prima AFP), voto digital ONPE y formación en arquitectura en la nube (AWS & Azure).</p>
+                    <p><strong>Experiencia Relevante:</strong> OECE (2026), ONPE (2025), NTT DATA / Credicorp (2022-2025), Neoris / BBVA (2021), Plus One Latam / IZIPAY (2020-2021).</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="mailto:chahuayoboza@gmail.com?subject=Solicitud%20CV%20PDF%20Jhonatan%20Chahuayo" class="btn btn-primary">
+                    <i data-lucide="download"></i> Solicitar Versión PDF Oficial
+                </a>
+                <button class="btn btn-secondary" onclick="closeCvModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>

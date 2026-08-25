@@ -4,7 +4,7 @@
 ------------------------------------------------------------- */
 
 :root {
-    /* Professional Enterprise Palette (Slate, Cobalt & Emerald) */
+    /* Professional Enterprise Palette - Dark Mode Default */
     --bg-dark: #0b0f17;
     --bg-card: #131b2e;
     --bg-card-hover: #18233c;
@@ -42,6 +42,80 @@
     --shadow-blue: 0 4px 14px rgba(37, 99, 235, 0.25);
 
     --transition: all 0.25s ease-in-out;
+}
+
+/* Light Theme Variables */
+[data-theme="light"] {
+    --bg-dark: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f1f5f9;
+    --bg-panel: #f1f5f9;
+    --border-color: #e2e8f0;
+    --border-highlight: #2563eb;
+    
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --text-dim: #64748b;
+
+    --gradient-text: linear-gradient(180deg, #0f172a 0%, #334155 100%);
+    --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] h1, [data-theme="light"] h2, [data-theme="light"] h3, [data-theme="light"] h4 {
+    color: #0f172a;
+}
+
+[data-theme="light"] .hero-subtitle strong {
+    color: #0f172a;
+}
+
+[data-theme="light"] .brand-logo, [data-theme="light"] .stat-number, [data-theme="light"] .client-name, [data-theme="light"] .skill-name {
+    color: #0f172a;
+}
+
+[data-theme="light"] .btn-secondary {
+    background: #ffffff;
+    color: #0f172a;
+    border-color: #cbd5e1;
+}
+
+[data-theme="light"] .btn-secondary:hover {
+    background: #f1f5f9;
+    border-color: #94a3b8;
+}
+
+[data-theme="light"] .code-block, [data-theme="light"] .sim-logs, [data-theme="light"] .chart-container, [data-theme="light"] .bpm-log-console {
+    background: #1e293b;
+    color: #38bdf8;
+}
+
+[data-theme="light"] .navbar-container {
+    background: rgba(248, 250, 252, 0.94);
+}
+
+[data-theme="light"] .clients-section, [data-theme="light"] .case-studies-section, [data-theme="light"] .timeline-section, [data-theme="light"] .contact-info-panel {
+    background: #e2e8f0;
+}
+
+/* Theme Toggle Button Styling */
+.theme-toggle-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.theme-toggle-btn:hover {
+    border-color: var(--border-highlight);
+    color: var(--primary);
+    transform: scale(1.05);
 }
 
 /* CSS Reset & Global Styles */

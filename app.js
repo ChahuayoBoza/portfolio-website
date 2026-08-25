@@ -4,6 +4,9 @@
 ------------------------------------------------------------- */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Theme Toggle
+    initThemeToggle();
+
     // Initialize Lucide Icons
     if (window.lucide) {
         lucide.createIcons();
@@ -19,6 +22,45 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Skill Filters
     initSkillFilters();
 });
+
+/* -------------------------------------------------------------
+   THEME TOGGLE (LIGHT / DARK MODE)
+------------------------------------------------------------- */
+function initThemeToggle() {
+    const themeBtn = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    if (themeBtn) {
+        themeBtn.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('portfolio-theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+    }
+}
+
+function updateThemeIcon(theme) {
+    const themeBtn = document.getElementById('themeToggle');
+    if (!themeBtn) return;
+
+    if (theme === 'light') {
+        themeBtn.innerHTML = '<i data-lucide="moon"></i>';
+        themeBtn.setAttribute('title', 'Cambiar a Modo Oscuro');
+    } else {
+        themeBtn.innerHTML = '<i data-lucide="sun"></i>';
+        themeBtn.setAttribute('title', 'Cambiar a Modo Claro');
+    }
+
+    if (window.lucide) {
+        lucide.createIcons();
+    }
+}
 
 /* -------------------------------------------------------------
    NAVBAR & SCROLLSPY
